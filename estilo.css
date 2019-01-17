@@ -1,0 +1,135 @@
+
+.corpo{
+    background:#897;
+    width: 50px;
+    height: 50px;
+}
+
+
+.principal{
+    text-align: center;
+    min-height:100%;
+    position:relative;
+}
+
+.principal ul{
+    list-style:none;
+}
+
+.principal ul li { 
+    display: inline; 
+    background-color: 
+}
+
+.principal ul li a {
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+.principal ul li a:hover {
+    background-color:#D6D6D6;
+ 
+    border-bottom:5px solid #EA0000;
+}
+
+.formulario{
+    background:#6D6D6D;
+    width: 400px;
+    height: 450px;
+    margin:0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+*{
+    font-family: arial;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.topo{
+    height: 50px;
+    background-color: #347aba;
+    padding: 10px;
+}
+
+.topointerior{
+    width: 100%;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.logomarca{
+    float: left;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li:hover{
+    background-color: red;
+}
+
+.logomarca:hover{
+    background-color: red;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu ul,
+.menu li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.conteudointerno{
+    width: 1000px;
+    margin: auto;
+    height: 8px;
+}
+
+.titulo_opcoes{
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.rodape{
+    background-color: #347aba;
+    color: white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;   /* Mesma Altura do Rodapé */
+}
+
+INPUT.MeuInput {
+    width: 180px;
+    height: 30px;
+}
