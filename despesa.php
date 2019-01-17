@@ -15,6 +15,10 @@
                 <li><a href="removeDespesa.php">Remover Despesa</a></li>
                 <li><a href="alteraDespesa.php">Alterar Despesa</a></li>
             </ul>
+            <br><br>
+
+                <iframe width="100%" height="160px" frameborder="0" src="listar.php?msg=Lucro"></iframe>
+
         </div>
         <?php
         include_once './rodape.php';
