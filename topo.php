@@ -9,7 +9,7 @@
         <div class="topo"> 
             <div class="topointerior">
                 <div class="logomarca">
-                    <a href="index.php"><font color="white">Início</a>
+                    <a href="index.php"><img src="inicio.png" height="55px" width="70px"></a>
                 </div>
                 <div class="menu">
                     <ul>

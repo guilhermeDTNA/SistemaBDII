@@ -49,13 +49,7 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td><a href="mensalidade.php"><input type="button" class="MeuInput" value="Gerenciar Mensalidades"></a></td>
-                        
-                        <td></td>
-                        
-                        <td><a href="financas.php"><input type="button" class="MeuInput" value="Consultar Finanças"></a></td>
-                    </tr>
+
 
                 </table>
 
