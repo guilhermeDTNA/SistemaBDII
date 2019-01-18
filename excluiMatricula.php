@@ -16,13 +16,13 @@ try {
     $sql = "DELETE FROM matricula WHERE id_matricula = $id; UPDATE curso SET qtd_alunos=qtd_alunos-1 where id_curso = $id_curso; ";
 
     $stmt = $pdo->prepare($sql);
-    
+
     $stmt->execute();
 
-    
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./removeMatricula.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeMatricula.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeMatricula.php'</script>";
 }
 
 // Close connection

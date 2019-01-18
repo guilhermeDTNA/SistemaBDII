@@ -19,9 +19,11 @@ try {
     $stmt->execute();
 
     
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./removeProfessor.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeProfessor.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+        echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeProfessor.php'</script>";
+
 }
 
 // Close connection

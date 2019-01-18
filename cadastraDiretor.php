@@ -24,9 +24,12 @@ try {
     $stmt->bindParam(':estado_diretor', $_REQUEST['estado_diretor']);
     // Execute the prepared statement
     $stmt->execute();
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./addDiretor.php';</script>";
+
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='addDiretor.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='addDiretor.php'</script>";
 }
 
 // Close connection

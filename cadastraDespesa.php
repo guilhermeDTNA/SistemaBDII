@@ -18,9 +18,12 @@ try {
     $stmt->bindParam(':valor_despesa', $_REQUEST['valor_despesa']);
     // Execute the prepared statement
     $stmt->execute();
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./addDespesa.php';</script>";
+
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='addDespesa.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='addDespesa.php'</script>";
 }
 
 // Close connection

@@ -17,9 +17,12 @@ try {
     $stmt->bindParam(':id_curso', $_REQUEST['id_curso']);
     // Execute the prepared statement
     $stmt->execute();
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./addMatricula.php';</script>";
+
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='addMatricula.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='addMatricula.php'</script>";
 }
 
 // Close connection

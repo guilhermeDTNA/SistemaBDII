@@ -24,9 +24,13 @@ try {
     $stmt->bindParam(':estado_aluno', $_REQUEST['estado_aluno']);
     // Execute the prepared statement
     $stmt->execute();
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./addAluno.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='addAluno.php'</script>";
+
+    //echo"<script language='javascript' type='text/javascript'>window.location.href='./addAluno.php';</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='addAluno.php'</script>";
 }
 
 // Close connection

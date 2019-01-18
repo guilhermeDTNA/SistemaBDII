@@ -15,13 +15,14 @@ try {
     $sql = "DELETE FROM curso WHERE id_curso = $id";
 
     $stmt = $pdo->prepare($sql);
-    
+
     $stmt->execute();
 
-    
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./removeCurso.php';</script>";
+
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeCurso.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeCurso.php'</script>";
 }
 
 // Close connection

@@ -15,14 +15,17 @@ try {
     $sql = "DELETE FROM diretor WHERE id_diretor = $id";
 
     $stmt = $pdo->prepare($sql);
-    
-    $stmt->execute();
 
+    $stmt->execute();
     
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./removeDiretor.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeDiretor.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeDiretor.php'</script>";
 }
+
+
+
 
 // Close connection
 unset($pdo);

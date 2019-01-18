@@ -72,6 +72,10 @@ body{
     list-style: none;
 }
 
+.logomarca:hover{
+    background-color: white;
+}
+
 .menu{
     float: right;
 }

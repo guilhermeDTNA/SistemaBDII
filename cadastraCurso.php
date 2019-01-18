@@ -19,9 +19,12 @@ try {
     $stmt->bindParam(':qtd_alunos', $_REQUEST['qtd_alunos']);
     // Execute the prepared statement
     $stmt->execute();
-    echo"<script language='javascript' type='text/javascript'>window.location.href='./addCurso.php';</script>";
+
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='addCurso.php'</script>";
 } catch (PDOException $e) {
-    die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+    //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
+
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='addCurso.php'</script>";
 }
 
 // Close connection
