@@ -63,15 +63,6 @@ body{
     color: #FFFFFF;
 }
 
-.logomarca{
-    float: left;
-    line-height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    cursor: pointer;
-    list-style: none;
-}
-
 .logomarca:hover{
     background-color: white;
 }
