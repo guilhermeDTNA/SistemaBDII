@@ -15,6 +15,12 @@
                 <li><a href="removeAluno.php">Remover Aluno</a></li>
                 <li><a href="alteraAluno.php">Alterar dados do aluno</a></li>
             </ul>
+            <br>
+            <br>
+            <form action="pesquisar.php?msg=aluno" method="POST"> 
+                <p align="center"> Nome do aluno: <input type="text" name="nome" required="">
+                    <input type="submit" value="Procurar" name="procurar"></p>
+            </form>
         </div>
         <?php
         include_once './rodape.php';

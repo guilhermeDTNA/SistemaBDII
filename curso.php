@@ -15,6 +15,12 @@
                 <li><a href="removeCurso.php">Remover Curso</a></li>
                 <li><a href="alteraCurso.php">Alterar Curso</a></li>
             </ul>
+            <br>
+            <br>
+            <form action="pesquisar.php?msg=curso" method="POST"> 
+                <p align="center"> Nome do curso: <input type="text" name="nome" required="">
+                    <input type="submit" value="Procurar" name="procurar"></p>
+            </form>
         </div>
         <?php
         include_once './rodape.php';
