@@ -22,30 +22,30 @@
                     <tr>
 
                         <td>
-                            <a href="aluno.php"><input type="button" class="MeuInput" value="Gerenciar Alunos"></a>
+                            <a href="gerenciar.php?tipo=aluno"><input type="button" class="MeuInput" value="Gerenciar Alunos"></a>
                         </td>
 
                         <td>
-                            <a href="professor.php"><input type="button" class="MeuInput" value="Gerenciar Professores"></a>
+                            <a href="gerenciar.php?tipo=professor"><input type="button" class="MeuInput" value="Gerenciar Professores"></a>
                         </td>
 
                         <td>
-                            <a href="curso.php"><input type="button" class="MeuInput" value="Gerenciar Cursos"></a>
+                            <a href="gerenciar.php?tipo=curso"><input type="button" class="MeuInput" value="Gerenciar Cursos"></a>
                         </td>
 
                     </tr> 
 
                     <tr>
                         <td>
-                            <a href="despesa.php"><input type="button" class="MeuInput" value="Gerenciar Despesas"></a>
+                            <a href="gerenciar.php?tipo=despesa"><input type="button" class="MeuInput" value="Gerenciar Despesas"></a>
                         </td>
 
                         <td>
-                            <a href="matricula.php"><input type="button" class="MeuInput" value="Gerenciar Matrículas"></a>
+                            <a href="gerenciar.php?tipo=matricula"><input type="button" class="MeuInput" value="Gerenciar Matrículas"></a>
                         </td>
 
                         <td>
-                            <a href="diretor.php"><input type="button" class="MeuInput" value="Gerenciar Diretores"></a>
+                            <a href="gerenciar.php?tipo=diretor"><input type="button" class="MeuInput" value="Gerenciar Diretores"></a>
                         </td>
                     </tr>
                     
