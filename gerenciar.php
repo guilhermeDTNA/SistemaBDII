@@ -8,6 +8,7 @@
     <body>
         <?php
         include_once './topo.php';
+       $tipo2 =  $_GET['tipo'];
        $tipo = ucfirst($_GET['tipo']);
         ?>
         <div class="principal">
@@ -18,8 +19,8 @@
             </ul>
             <br>
             <br>
-            <form action="pesquisar.php?msg=aluno" method="POST"> 
-                <p align="center"> Nome do aluno: <input type="text" name="nome" required="">
+            <form action="pesquisar.php?msg=<?php echo $tipo2?>" method="POST"> 
+                <p align="center"> Nome do <?php echo $tipo?>: <input type="text" name="nome" required="">
                     <input type="submit" value="Procurar" name="procurar"></p>
             </form>
         </div>
