@@ -8,9 +8,9 @@
 
         <div class="topo"> 
             <div class="topointerior">
-                <div class="logomarca">
+                
                     <a href="index.php"><img src="inicio.png" height="55px" width="70px"></a>
-                </div>
+                
                 <div class="menu">
                     <ul>
                         <li><a href="listar.php?msg=aluno" target="_blank">LISTAR ALUNOS</a></li>
