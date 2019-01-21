@@ -27,7 +27,7 @@
             <br>
 
             <?php
-            if ($tipo == 'Matricula') {
+            if ($tipo == 'Curso') {
                 echo '  <form action="listar.php?msg=Curso-Aluno" method="POST"> 
                 <p align="center"> ID do Curso: <input type="number" name="id_curso" required="">
                     <input type="submit" value="Listar alunos matriculados" name="listar"></p>
