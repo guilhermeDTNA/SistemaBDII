@@ -7,6 +7,10 @@
 
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
+        <?php
         include_once './topo.php';
         include_once './mysql.php';
         try {

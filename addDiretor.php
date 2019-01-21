@@ -8,6 +8,8 @@
 
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
         include_once './topo.php';
         ?>
         <div class="titulo_opcoes">
@@ -46,9 +48,7 @@
                     <td>
                         Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor">
                     </td>
-                    <td>
-
-                    </td>
+        
                     <td>
                         Estado: <select name="estado_diretor" placeholder="Estado">
                             <option selected disabled="disabled">Estado</option>
@@ -80,6 +80,13 @@
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
                         </select>
+                    </td>
+
+                    <td>
+                        Senha: <input type="password" placeholder="Senha" name="senha">
+                    </td>
+                    <td>
+                        Usuario: <input type="text" placeholder="Usuario" name="usuario">
                     </td>
                 </tr>
 

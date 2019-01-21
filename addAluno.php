@@ -8,6 +8,10 @@
 <!--Teste Trabalho Banco de DadosII-->
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
+        <?php
         include_once './topo.php';
         ?>
         <div class="titulo_opcoes">

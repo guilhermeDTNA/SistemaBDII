@@ -1,4 +1,6 @@
 <?php
+session_start();
+include_once './valida_login.php';
 include_once './mysql.php';
 include_once './topo.php';
 

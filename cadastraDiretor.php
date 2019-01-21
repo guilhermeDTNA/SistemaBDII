@@ -1,5 +1,6 @@
 <?php
-
+    session_start();
+    include_once './valida_login.php';
 /* Attempt MySQL server connection. Assuming you are running MySQL
   server with default setting (user 'root' with no password) */
 include_once './mysql.php';
@@ -10,7 +11,7 @@ include_once './topo.php';
 // Attempt insert query execution
 try {
     // Create prepared statement
-    $sql = "INSERT INTO diretor (nome_diretor,sobrenome_diretor,email_diretor, data_nasc, rua_diretor, numero, cidade_diretor, estado_diretor) VALUES (:nome_diretor,:sobrenome_diretor,:email_diretor, :data_nasc, :rua_diretor, :numero, :cidade_diretor, :estado_diretor)";
+    $sql = "INSERT INTO diretor (nome_diretor,sobrenome_diretor,email_diretor, data_nasc, rua_diretor, numero, cidade_diretor, estado_diretor, senha, usuario) VALUES (:nome_diretor,:sobrenome_diretor,:email_diretor, :data_nasc, :rua_diretor, :numero, :cidade_diretor, :estado_diretor, :senha, :usuario)";
     $stmt = $pdo->prepare($sql);
 
     // Bind parameters to statement
@@ -22,6 +23,8 @@ try {
     $stmt->bindParam(':numero', $_REQUEST['numero']);
     $stmt->bindParam(':cidade_diretor', $_REQUEST['cidade_diretor']);
     $stmt->bindParam(':estado_diretor', $_REQUEST['estado_diretor']);
+    $stmt->bindParam(':senha', $_REQUEST['senha']);
+    $stmt->bindParam(':usuario', $_REQUEST['usuario']);
     // Execute the prepared statement
     $stmt->execute();
 

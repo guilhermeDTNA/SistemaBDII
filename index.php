@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
         <title>Página Inicial</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
+
+        <?php
         include_once './topo.php';
         ?>
+        <h2><a href="logout.php">Sair</a></h2>
 
         <div class="conteudointerno">
             <div class="titulo_opcoes">
@@ -22,34 +29,32 @@
                     <tr>
 
                         <td>
-                            <a href="gerenciar.php?tipo=aluno"><input type="button" class="MeuInput" value="Gerenciar Alunos"></a>
+                            <a href="aluno.php"><input type="button" class="MeuInput" value="Gerenciar Alunos"></a>
                         </td>
 
                         <td>
-                            <a href="gerenciar.php?tipo=professor"><input type="button" class="MeuInput" value="Gerenciar Professores"></a>
+                            <a href="professor.php"><input type="button" class="MeuInput" value="Gerenciar Professores"></a>
                         </td>
 
                         <td>
-                            <a href="gerenciar.php?tipo=curso"><input type="button" class="MeuInput" value="Gerenciar Cursos"></a>
+                            <a href="curso.php"><input type="button" class="MeuInput" value="Gerenciar Cursos"></a>
                         </td>
 
                     </tr> 
 
                     <tr>
                         <td>
-                            <a href="gerenciar.php?tipo=despesa"><input type="button" class="MeuInput" value="Gerenciar Despesas"></a>
+                            <a href="despesa.php"><input type="button" class="MeuInput" value="Gerenciar Despesas"></a>
                         </td>
 
                         <td>
-                            <a href="gerenciar.php?tipo=matricula"><input type="button" class="MeuInput" value="Gerenciar Matrículas"></a>
+                            <a href="matricula.php"><input type="button" class="MeuInput" value="Gerenciar Matrículas"></a>
                         </td>
 
                         <td>
-                            <a href="gerenciar.php?tipo=diretor"><input type="button" class="MeuInput" value="Gerenciar Diretores"></a>
+                            <a href="diretor.php"><input type="button" class="MeuInput" value="Gerenciar Diretores"></a>
                         </td>
-                    </tr>
-                    
-
+                    </tr>                   
 
                 </table>
 

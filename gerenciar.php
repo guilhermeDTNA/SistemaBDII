@@ -7,6 +7,10 @@
     </head>
     <body>
         <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
+        <?php
         include_once './topo.php';
         $tipo2 = $_GET['tipo'];
         $tipo = ucfirst($_GET['tipo']);
