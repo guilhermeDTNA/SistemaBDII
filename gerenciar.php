@@ -8,12 +8,13 @@
     <body>
         <?php
         include_once './topo.php';
+       $tipo = ucfirst($_GET['tipo']);
         ?>
         <div class="principal">
             <ul>
-                <li><a href="addAluno.php">Cadastrar Aluno</a></li>
-                <li><a href="removeAluno.php">Remover Aluno</a></li>
-                <li><a href="alteraAluno.php">Alterar dados do aluno</a></li>
+                <li><a href="add<?php echo $tipo?>.php">Cadastrar <?php echo $tipo?></a></li>
+                <li><a href="remove<?php echo $tipo?>.php">Remover <?php echo $tipo?></a></li>
+                <li><a href="altera<?php echo $tipo?>.php">Alterar Dados do <?php echo $tipo?></a></li>
             </ul>
             <br>
             <br>
