@@ -5,6 +5,10 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
+        <?php
+        session_start();
+        include_once './valida_login.php';
+        ?>
 
         <div class="topo"> 
             <div class="topointerior">

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include_once './valida_login.php';
+?>
 <?php 
 include_once("mysql.php");
 
