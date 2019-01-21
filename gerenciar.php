@@ -33,6 +33,11 @@
                     <input type="submit" value="Listar alunos matriculados" name="listar"></p>
             </form>  ';
             }
+            if ($tipo == 'Matricula'){
+                echo '  <ul>
+                <li><a href="listar.php?msg=Professor-Aluno">Listar relações entre professores e alunos</a></li>
+            </ul> ';
+            }
             ?>
         </div>
         <?php
