@@ -3,7 +3,7 @@ session_start();
 
 define('HOST', 'localhost');
 define('USUARIO', 'root');
-define('SENHA', 'root');
+define('SENHA', '12345');
 define('BD', 'SistemaBD');
 
 $conexao = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possivel conectar');
@@ -30,4 +30,7 @@ if($row == 1) {
 	header('Location: home.php');
 	exit();
 }
+
+
+?>
 	

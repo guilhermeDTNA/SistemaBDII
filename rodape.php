@@ -3,7 +3,7 @@
 </head>
 <body>
 <?php
-    session_start();
+    //session_start();
     include_once './valida_login.php';
 ?>
 <div class="rodape">
