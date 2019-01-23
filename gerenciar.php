@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="add<?php echo $tipo ?>.php">Cadastrar <?php echo $tipo ?></a></li>
                 <li><a href="remove<?php echo $tipo ?>.php">Remover <?php echo $tipo ?></a></li>
-                <li><a href="altera<?php echo $tipo ?>.php">Alterar Dados do <?php echo $tipo ?></a></li>
+                <li><a href="alterarDados.php?tipo=<?php echo $tipo2 ?>">Alterar Dados do <?php echo $tipo ?></a></li>
             </ul>
             <br>
             <br>
