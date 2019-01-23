@@ -19,11 +19,11 @@ session_start();
 		endif;
 		unset($_SESSION['nao_autenticado']);
 	?>
-    <div class="login">
+		<div class="login">
 		    <form action="login.php" method="POST">
 
 		    	<div class="imgcontainer">
-	    			<img src="avatar.jpg" alt="Avatar" class="avatar">
+	    			<img src="avatar.png" alt="Avatar" class="avatar">
 				</div>
 
 				<div class="container">
@@ -46,12 +46,6 @@ session_start();
 		        </div>
 		    </form>
 	    </div>
-=======
-    <form action="login.php" method="POST">
-        <input name="usuario" type="text" placeholder="Seu usuário" autofocus="">
-        <input name="senha" type="password" placeholder="Sua senha">
-        <button type="submit">Entrar</button>
-    </form>
 </body>
 
 </html>

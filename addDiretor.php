@@ -8,8 +8,7 @@
 
     <body>
         <?php
-        session_start();
-        include_once './valida_login.php';
+        
         include_once './topo.php';
         ?>
         <div class="titulo_opcoes">

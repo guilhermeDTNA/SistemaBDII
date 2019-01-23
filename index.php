@@ -15,8 +15,9 @@
         <?php
         include_once './topo.php';
         ?>
-        <h2><a href="logout.php">Sair</a></h2>
-
+        
+        <h1><marquee direction="right"><font color="blue">Bem-Vindo!</marquee></h1>
+<!-- 
         <div class="conteudointerno">
             <div class="titulo_opcoes">
                 <font color="black">Escolha uma das opções abaixo:
@@ -62,7 +63,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     <?php
     include_once './rodape.php';
