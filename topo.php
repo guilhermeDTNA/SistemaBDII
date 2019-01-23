@@ -24,18 +24,18 @@
            </li>
            <li class='has-sub'><a href='#'><span>Gestão de pessoas</span></a>
               <ul>
-                <li><a href="aluno.php">Gerenciar alunos</a></li>
-                <li><a href="professor.php" >Gerenciar Professores</a></li>
-                <li><a href="diretor.php" >Gerenciar diretores</a></li>
+                <li><a href="gerenciar.php?tipo=aluno">Gerenciar alunos</a></li>
+                <li><a href="gerenciar.php?tipo=professor" >Gerenciar Professores</a></li>
+                <li><a href="gerenciar.php?tipo=diretor" >Gerenciar diretores</a></li>
               </ul>
            </li>
           <li class='has-sub'><a href='#'><span>Gestão de curso</span></a>
               <ul>
-                <li><a href="curso.php">Curso</a></li>
-                <li><a href="matricula.php">Gerenciar matricula</a></li>
+                <li><a href="gerenciar.php?tipo=curso">Curso</a></li>
+                <li><a href="gerenciar.php?tipo=matricula">Gerenciar matricula</a></li>
               </ul>
            </li>  
-           <li class='active'><a href="despesa.php"><span>Gestão de despesas</span></a></li>    
+           <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>    
            <div class="logout">
               <a href="logout.php">Sair</a>
            </div> 
