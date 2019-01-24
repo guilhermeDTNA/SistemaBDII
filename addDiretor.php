@@ -30,21 +30,18 @@
                     <td>
                         E-mail: <input type="email" placeholder="E-mail" name="email_diretor">
                     </td>
-                </tr>
-
-                <tr>
                     <td>
                         Data de nascimento: <input type="date" placeholder="Data" name="data_nasc">
                     </td>
+                </tr>
+
+                <tr>
                     <td>
                         Rua: <input type="text" placeholder="Rua" name="rua_diretor">
                     </td>
                     <td>
                         Número: <input type="number" placeholder="Numero" name="numero">
                     </td>
-                </tr>
-
-                <tr>
                     <td>
                         Cidade: <input type="text" placeholder="Cidade" name="cidade_diretor">
                     </td>
@@ -81,13 +78,19 @@
                             <option value="TO">Tocantins</option>
                         </select>
                     </td>
+                </tr>
+
+                <tr>
+                    <td></td>
 
                     <td>
                         Senha: <input type="password" placeholder="Senha" name="senha">
                     </td>
                     <td>
-                        Usuario: <input type="text" placeholder="Usuario" name="usuario">
+                        Usuário: <input type="text" placeholder="Usuário" name="usuario">
                     </td>
+                    
+                    <td></td>
                 </tr>
 
             </table>
