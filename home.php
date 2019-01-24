@@ -41,7 +41,7 @@ session_start();
 		        </div>
 
 		        <div class="container" style="background-color: #f1f1f1">
-		        	<button type="button" class="cancelbtn">Cancelar</button>
+		        	<button type="button" class="cancelbtn">Cancelar</button><br>
     				<span class="psw">Esqueceu a <a href="#">senha?</a></span>
 		        </div>
 		    </form>

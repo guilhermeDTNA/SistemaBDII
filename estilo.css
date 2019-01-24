@@ -1,7 +1,14 @@
-.corpo{
+/*.corpo{
     background:#897;
     width: 50px;
     height: 50px;
+}*/
+.conteudointerno{
+    text-align: center;
+    min-height:100%;
+    width: 1000px;
+    margin: auto;
+    
 }
 
 
@@ -9,6 +16,7 @@
     text-align: center;
     min-height:100%;
     position:relative;
+    margin-top: 40px;
 }
 
 .principal ul{
@@ -29,6 +37,13 @@
 .principal ul li a:hover {
     background-color:#D6D6D6;
     border-bottom:5px solid #EA0000;
+}
+
+.principal p{
+    background-color:#D6D6D6;
+    width: 1000px;
+    margin: auto;
+    min-height:100%;
 }
 
 .formulario{
@@ -78,11 +93,6 @@ body{
     background: #3b5ba5;
 }*/
 
-.conteudointerno{
-    width: 1000px;
-    margin: auto;
-    height: 8px;
-}
 
 .titulo_opcoes{
     height: 90px;
@@ -92,13 +102,63 @@ body{
 }
 
 .rodape{
-    background-image: url('menu-bg.png');
-    color: white;
+  /*background: #000;*/
+    /*background: #302f31;*/
     position:absolute;
-    bottom:0;
     width:100%;
-    height:70px;   /* Mesma Altura do Rodapé */
+    height:400px;   /* Mesma Altura do Rodapé */
+    margin-top: 300px;
 }
+
+.controdape{
+ background:#302f31;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  float: left;
+  margin-top: 300px;
+}
+.icone img{
+  width: 10%;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  float: right;
+}
+.controdape h4{
+  color: #fff;
+  margin: 13px;
+}
+
+.fundador{
+    width: 300px;
+    margin: 10px;
+    padding: 0.1px;
+    height: 180px;
+}
+
+.icone{
+    width: 300px;
+    height: 180px;
+    float: right;
+    margin: 10px;
+    padding: 0.1px;
+}
+
+
+.copy{
+  background-image: url('menu-bg.png');
+  width: 100%;
+  height: 70px;
+  margin-top: 500px;
+}
+
+.copy p{
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
 
 INPUT.MeuInput {
     width: 180px;
@@ -197,6 +257,7 @@ span.senha{
   padding-bottom: 3px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+
 }
 #cssmenu:before,
 #cssmenu:after,
@@ -218,6 +279,7 @@ span.senha{
   margin: 0;
   padding: 0;
   position: relative;
+
 }
 #cssmenu > ul li {
   margin: 0;
@@ -249,7 +311,6 @@ span.senha{
 }
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li > a:active {
-  background: url(images/active.png) repeat;
 }
 /* Childs */
 #cssmenu > ul ul {
