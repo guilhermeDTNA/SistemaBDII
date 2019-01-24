@@ -19,12 +19,12 @@
             <ul>
                 <li><a href="add<?php echo $tipo ?>.php">Cadastrar <?php echo $tipo ?></a></li>
                 <li><a href="remove<?php echo $tipo ?>.php">Remover <?php echo $tipo ?></a></li>
-                <li><a href="alterarDados.php?tipo=<?php echo $tipo2 ?>">Alterar Dados do <?php echo $tipo ?></a></li>
+                <li><a href="alterarDados.php?tipo=<?php echo $tipo2 ?>">Alterar Dados do(a) <?php echo $tipo ?></a></li>
             </ul>
             <br>
             <br>
             <form action="pesquisar.php?msg=<?php echo $tipo2 ?>" method="POST"> 
-                <p align="center"> Nome do <?php echo $tipo ?>: <input type="text" name="nome" required="">
+                <p align="center"> Nome do(a) <?php echo $tipo ?>: <input type="text" name="nome" required="">
                     <input type="submit" value="Procurar" name="procurar"></p>
             </form>
             
@@ -41,6 +41,9 @@
                 echo '  <ul>
                 <li><a href="listar.php?msg=Professor-Aluno">Listar relações entre professores e alunos</a></li>
             </ul> ';
+            }
+            if ($tipo == 'Despesa'){
+                echo '<br><br><iframe width="100%" height="160px" frameborder="0" src="listar.php?msg=Lucro"></iframe>';
             }
             ?>
         </div>
