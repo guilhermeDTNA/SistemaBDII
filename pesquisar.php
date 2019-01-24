@@ -18,7 +18,12 @@ if (isset($_POST['procurar'])) {
             $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_diretor = '$nome'");
         } elseif ($cargo == 'curso') {
             $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_curso = '$nome'");
+        } elseif ($cargo == 'matricula') {
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE id_matricula = '$nome'");
+        } elseif ($cargo == 'despesa') {
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_despesa = '$nome'");
         }
+        
 
         $stmt->execute();
         $arrValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
