@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-define('HOST', 'localhost:3308');
+define('HOST', 'localhost');
 define('USUARIO', 'root');
-define('SENHA', '');
+define('SENHA', 'timorleste');
 define('BD', 'dbii');
 
 $conexao = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possivel conectar');
