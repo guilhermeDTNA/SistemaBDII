@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GereDespesa</title>
+        <title>Cadastrar Despesa - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 

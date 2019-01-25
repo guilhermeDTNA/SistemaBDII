@@ -63,7 +63,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #9C9C9C;
+    background: #DCDCDC;
 }
 
 .titulo_opcoes{
@@ -114,6 +114,14 @@ body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
 }
+
+.geral h3{
+  text-align: center;
+  margin: 130px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+}
+
 .content {
   overflow:hidden;}
 

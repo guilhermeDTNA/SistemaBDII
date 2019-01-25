@@ -6,7 +6,7 @@
    <link rel="stylesheet" href="estilo.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    
-    <title>GereCurso</title>
+    <title></title>
     </head>
     <body>
        <div id='cssmenu'>

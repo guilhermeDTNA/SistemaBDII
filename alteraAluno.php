@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GereCurso</title>
+        <title>Alterar Aluno - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 

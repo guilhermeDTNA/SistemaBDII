@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Listar - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 

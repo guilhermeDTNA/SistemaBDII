@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GereCurso</title>
+        <title>Remover Diretor - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>GereMatricula</title>
+        <title>Cadastrar Matrícula - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 
