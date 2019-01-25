@@ -7,9 +7,7 @@
         include_once './valida_login.php';
         ?>
         <div class="rodape">
-            <pre>
-                Bancos de Dados II                 Alunos: Darlan Souza, Guilherme Rocha, Isack, Luiz Araújo
-            </pre>
+            <p><center>@copyright GereCurso 2019</center></p>
         </div>
     </body>
 </html>

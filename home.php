@@ -14,7 +14,9 @@ session_start();
 	<?php
 	if(isset($_SESSION['nao_autenticado'])):
 	?>
+	<div class="loginp">
 	<p>Usuario ou senha invalidos!</p>
+	</div>
 	<?php
 		endif;
 		unset($_SESSION['nao_autenticado']);
@@ -34,15 +36,6 @@ session_start();
 			        <input name="senha" type="password" placeholder="Sua senha" required><br>
 			        
 			        <button type="submit">Login</button>
-
-			        <label>		        	
-			        	<input type="checkbox" name="remember" checked="checked">Salvar
-			        </label>
-		        </div>
-
-		        <div class="container" style="background-color: #f1f1f1">
-		        	<button type="button" class="cancelbtn">Cancelar</button><br>
-    				<span class="psw">Esqueceu a <a href="#">senha?</a></span>
 		        </div>
 		    </form>
 	    </div>
