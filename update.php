@@ -12,10 +12,6 @@ $tipo = $_POST['tipo'];
 $id = $_POST['id_a'];
 include_once './mysql.php';
 
-
-
-
-
 //
 if ($tipo == 'aluno') {
     $sql = "call sp_dadosAluno($id);";

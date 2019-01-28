@@ -22,8 +22,9 @@ $stmt->bindParam($id_professor, $_REQUEST['id_professor']);
 $stmt->bindParam($nome, $_REQUEST['nome_curso']);
 $stmt->execute();
 
-echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='alterarDados.php?tipo=curso'</script>";
 } catch (Exception $e) {
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='alterarDados.php?tipo=curso'</script>";
 
 }
 
@@ -44,8 +45,9 @@ $stmt->bindParam($nome, $_REQUEST['nome_despesa']);
 $stmt->bindParam($valor_despesa, $_REQUEST['valor_despesa']);
 $stmt->execute();
 
-echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='alterarDados.php?tipo=despesa'</script>";
 } catch (Exception $e) {
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='alterarDados.php?tipo=despesa'</script>";
 
 }
 
@@ -66,9 +68,9 @@ $stmt->bindParam($id_aluno, $_REQUEST['id_aluno']);
 $stmt->bindParam($id_curso, $_REQUEST['id_curso']);
 $stmt->execute();
 
-echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='alterarDados.php?tipo=matricula'</script>";
 } catch (Exception $e) {
-die("ERROR: Could not able to execute $msql. " . $e->getMessage());
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='alterarDados.php?tipo=matricula'</script>";
 }
 
 
@@ -99,8 +101,6 @@ $estado = $_POST['estado'];
 //
 }
 try {
-
-
 
 // Create prepared statement
 if(($_POST['oTipo'] == 'aluno')){
@@ -151,9 +151,9 @@ $stmt->bindParam($usuario, $_REQUEST['usuario']);
 
 // Execute the prepared statement
 $stmt->execute();
-echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
+    echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='alterarDados.php?tipo=$_POST[oTipo]'</script>";
 } catch (PDOException $e) {
-die("ERROR: Could not able to execute $msql. " . $e->getMessage());
+    echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='alterarDados.php?tipo='tipo=$_POST[oTipo]'</script>";
 }
 
 
