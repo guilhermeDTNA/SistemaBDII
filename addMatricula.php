@@ -5,9 +5,11 @@
         <title>Cadastrar Matrícula - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
+    <!---->
 
     <body>
         <?php
+        error_reporting(0);
         session_start();
         include_once './valida_login.php';
         ?>
@@ -18,15 +20,23 @@
             <font color="black">Cadastra Matriculas
         </div>
         <form action="cadastraMatricula.php" method="POST">
-            <div>
+            <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
+            <tr>
+                <td>
                 ID do Aluno: <input type="number" placeholder="ID do Aluno" name="id_aluno">
-            </div><br>
+            </td>
+            <br>
 
-            <div>
+            <td>
                 ID do Curso: <input type="number" placeholder="ID do Curso" name="id_curso">
-            </div><br>
+            </td>
+            
+            <br>
 
-            <input type="submit" value="Registrar Matricula">
+           
+            </table><br><br>
+             <center><input type="submit" value="Registrar Matricula"></center>
+        </tr>
         </form>
         <?php
         include_once './rodape.php';

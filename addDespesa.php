@@ -14,20 +14,26 @@
             <font color="black">Cadastra Despesas
         </div>
                     <form action="cadastraDespesa.php" method="POST">
-                        <div>
+                        <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5> 
+                        <tr>
+                            <td>
                             ID do DIretor: <input type="number" placeholder="ID do Diretor" name="id_diretor">
-                        </div><br>
+                        </td><br>
                         
-                        <div>
+                        <td>
                             Nome da Despesa: <input type="text" placeholder="Nome da Despesa" name="nome_despesa">
-                        </div><br>
+                        </td><br>
                         
-                        <div>
+                        <td>
                             Valor da Despesa: <input type="text" placeholder="Valor da Despesa" name="valor_despesa">
-                        </div><br>
+                        </td><br>
 
-                        <input type="submit" value="Registrar Despesa">
-                        </div>
+                        
+                    
+                    </tr>
+                        </table><br><br>
+
+                        <center><input type="submit" value="Registrar Despesa"></center>
                     </form>
             <?php
             include_once './rodape.php';
