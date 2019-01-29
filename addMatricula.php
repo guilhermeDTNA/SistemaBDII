@@ -5,6 +5,7 @@
         <title>Cadastrar Matrícula - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
+    <!---->
 
     <body>
         <?php
