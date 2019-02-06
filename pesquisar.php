@@ -11,17 +11,17 @@ if (isset($_POST['procurar'])) {
 
     try {
         if ($cargo == 'professor') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_professor = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_professor LIKE '%$nome%'");
         } elseif ($cargo == 'aluno') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_aluno = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_aluno LIKE '%$nome%'");
         } elseif ($cargo == 'diretor') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_diretor = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_diretor LIKE '%$nome%'");
         } elseif ($cargo == 'curso') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_curso = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_curso LIKE '%$nome%'");
         } elseif ($cargo == 'matricula') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE id_matricula = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE id_matricula LIKE '%$nome%'");
         } elseif ($cargo == 'despesa') {
-            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_despesa = '$nome'");
+            $stmt = $pdo->prepare("SELECT * FROM $cargo WHERE nome_despesa LIKE '%$nome%'");
         }
         
 
