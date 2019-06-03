@@ -6,6 +6,12 @@
         <meta charset="UTF-8">
         <title>Alterar Dados - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        
+        <!-- Arquivos Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery.min.js" ></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -30,7 +36,7 @@
 
         <?php if(isset($_POST['procurar'])){
 
-            $id_alun = $_POST['id_aluno'];
+            $id_alun = addslashes($_POST['id_aluno']);
             
            try {
             $stmt = $pdo->prepare("SELECT id_aluno, nome_aluno, sobrenome_aluno, email_aluno FROM aluno WHERE id_aluno = '$id_alun'");

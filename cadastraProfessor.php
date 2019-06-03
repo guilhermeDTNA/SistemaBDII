@@ -15,15 +15,15 @@ try {
     $stmt = $pdo->prepare($sql);
 
     // Bind parameters to statement
-    $stmt->bindParam(':nome_professor', $_REQUEST['nome_professor']);
-    $stmt->bindParam(':sobrenome_professor', $_REQUEST['sobrenome_professor']);
-    $stmt->bindParam(':email_professor', $_REQUEST['email_professor']);
-    $stmt->bindParam(':data_nasc', $_REQUEST['data_nasc']);
-    $stmt->bindParam(':rua_professor', $_REQUEST['rua_professor']);
-    $stmt->bindParam(':numero', $_REQUEST['numero']);
-    $stmt->bindParam(':cidade_professor', $_REQUEST['cidade_professor']);
-    $stmt->bindParam(':estado_professor', $_REQUEST['estado_professor']);
-    $stmt->bindParam(':salario', $_REQUEST['salario']);
+    $stmt->bindParam(':nome_professor', addslashes($_REQUEST['nome_professor']));
+    $stmt->bindParam(':sobrenome_professor', addslashes($_REQUEST['sobrenome_professor']));
+    $stmt->bindParam(':email_professor', addslashes($_REQUEST['email_professor']));
+    $stmt->bindParam(':data_nasc', addslashes($_REQUEST['data_nasc']));
+    $stmt->bindParam(':rua_professor', addslashes($_REQUEST['rua_professor']));
+    $stmt->bindParam(':numero', addslashes($_REQUEST['numero']));
+    $stmt->bindParam(':cidade_professor', addslashes($_REQUEST['cidade_professor']));
+    $stmt->bindParam(':estado_professor', addslashes($_REQUEST['estado_professor']));
+    $stmt->bindParam(':salario', addslashes($_REQUEST['salario']));
     // Execute the prepared statement
     $stmt->execute();
 
