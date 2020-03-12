@@ -10,9 +10,6 @@ include_once './topo.php';
 // Attempt insert query execution
 try {
     // Create prepared statement
-    
-    $hash = password_hash($_REQUEST['senha'], PASSWORD_BCRYPT);
-    
     $sql = "INSERT INTO diretor (nome_diretor,sobrenome_diretor,email_diretor, data_nasc, rua_diretor, numero, cidade_diretor, estado_diretor, senha, usuario) VALUES (:nome_diretor,:sobrenome_diretor,:email_diretor, :data_nasc, :rua_diretor, :numero, :cidade_diretor, :estado_diretor, :senha, :usuario)";
     $stmt = $pdo->prepare($sql);
 

@@ -4,12 +4,6 @@
         <meta charset="UTF-8">
         <title>Cadastrar Diretor - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        
-        <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -22,7 +16,7 @@
             <font color="black">Cadastra diretores
         </div>
 
-        <form action="cadastraDiretor.php?nivel=user" method="POST">
+        <form action="cadastraDiretor.php" method="POST">
 
             <table bgcolor="darksalmon" align=center border=2px height = 100 wdith= 200 cellspacing=5 cellpadding= 5>
 
@@ -105,7 +99,6 @@
 
             <?php
             include_once './rodape.php';
-            
             ?>
 
     </body>

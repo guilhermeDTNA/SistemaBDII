@@ -8,12 +8,6 @@ session_start();
     <meta charset="UTF-8">
     <title>Login - GereCurso</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    
-    <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +15,7 @@ session_start();
 	if(isset($_SESSION['nao_autenticado'])):
 	?>
 	<div class="loginp">
-	<p>Usuario ou senha inválidos!</p>
+	<p>Usuario ou senha invalidos!</p>
 	</div>
 	<?php
 		endif;
@@ -42,7 +36,6 @@ session_start();
 			        <input name="senha" type="password" placeholder="Sua senha" required><br>
 			        
 			        <button type="submit">Login</button>
-			        <a href="https://www.guilhermerocha.tk"><button type="button" class="btn-danger">Retornar ao portfolio</button></a>
 		        </div>
 		    </form>
 	    </div>

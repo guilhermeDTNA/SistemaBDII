@@ -10,13 +10,6 @@ include_once './topo.php';
 
 // Attempt insert query execution
 try {
-    
-    if ($_POST['nivel']!="superuserroot"){
-        echo "<script type=text/javascript>alert('Você não tem permissão para realizar essa operação!');window.location='removeDiretor.php'</script>";
-        exit();
-    }
-    else{
-    
     // Create prepared statement
     $id = addslashes($_POST['id_diretor']);
 
@@ -27,7 +20,6 @@ try {
     $stmt->execute();
     
     echo "<script type=text/javascript>alert('Operação realizada com sucesso!');window.location='removeDiretor.php'</script>";
-    }
 } catch (PDOException $e) {
     //die("ERROR: Could not able to execute $sql. " . $e->getMessage());
     echo "<script type=text/javascript>alert('Operação NÃO realizada!');window.location='removeDiretor.php'</script>";

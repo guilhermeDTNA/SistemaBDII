@@ -4,12 +4,6 @@
         <meta charset="UTF-8">
         <title>Gerenciar - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        
-        <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
     <body>
         <?php
@@ -56,7 +50,7 @@ if ($tipo == 'Matricula') {
             </ul> ';
 }
 if ($tipo == 'Despesa') {
-    echo '<br><br><iframe width="100%" height="490px" frameborder="0" src="listar.php?msg=Lucro"></iframe>';
+    echo '<br><br><iframe width="100%" height="160px" frameborder="0" src="listar.php?msg=Lucro"></iframe>';
 }
 ?>
         </div>

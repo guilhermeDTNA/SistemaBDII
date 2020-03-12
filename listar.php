@@ -3,12 +3,6 @@
         <meta charset="utf-8">
         <title>Listar - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
-        
-        <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -20,6 +14,7 @@
         $msg = addslashes($_GET['msg']);
         //include_once './topo.php';
         include_once './mysql.php';
+
         try {
 
             if ($msg == 'Professor-Aluno') {

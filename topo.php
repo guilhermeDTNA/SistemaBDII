@@ -4,28 +4,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="estilo.css">
-   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    
     <title></title>
-    
-    <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136244150-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-136244150-1');
-        </script>
-    
-    
     </head>
     <body>
        <div id='cssmenu'>
@@ -55,7 +36,6 @@
               </ul>
            </li>  
            <li class='active'><a href="gerenciar.php?tipo=despesa"><span>Gestão de despesas</span></a></li>    
-           <li class='active'><a href="https://www.guilhermerocha.tk"><span>Retornar ao portfolio</span></a></li> 
            <div class="logout">
               <a href="logout.php">Sair</a>
            </div> 

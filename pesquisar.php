@@ -4,7 +4,7 @@ include_once './valida_login.php';
 include_once './mysql.php';
 include_once './topo.php';
 
-if (isset(addslashes($_POST['procurar']))) {
+if if (isset(addslashes($_POST['procurar']))) {
 
     $nome = addslashes($_POST['nome']);
     $cargo = addslashes($_GET['msg']);

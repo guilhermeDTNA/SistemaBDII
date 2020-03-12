@@ -2,18 +2,6 @@
 session_start();
 include_once './valida_login.php';
 ?>
-<html>
-    <head>
-        <!-- Arquivos Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="jquery.min.js" ></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <meta charset-"utf-8">
-    </head>
-    <body>
-        
-    
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
   server with default setting (user 'root' with no password) */
@@ -49,7 +37,7 @@ $return = $query->fetch();
 unset($pdo);
 ?>
 
-<form action="update2.php?nivel=user" method="POST">
+<form action="update2.php" method="POST">
 
 <?php
 if ($tipo == 'curso') {
@@ -292,9 +280,6 @@ if ($tipo == 'curso') {
     <input type="hidden" name="oTipo" value="<?php echo $tipo ?>"> 
     <p align="center"><input type="submit" value="Atualizar" name="atualizar"></p>
 </form> 
-
-</body>
-</html>
 
 <?php
 include_once './rodape.php';
