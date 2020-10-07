@@ -3,12 +3,20 @@ session_start();
 
 define('HOST', 'localhost');
 define('USUARIO', 'root');
+<<<<<<< HEAD
 define('SENHA', 'teste123');
+=======
+define('SENHA', '12345');
+>>>>>>> origin/master
 define('BD', 'SistemaBD');
 
 $conexao = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possivel conectar');
  
+<<<<<<< HEAD
 if(empty(addslashes($_POST['usuario'])) || empty(addslashes($_POST['senha']))) {
+=======
+if(empty(addslashes($_POST['usuario'])) ||  empty(addslashes($_POST['senha']))) {
+>>>>>>> origin/master
 	header('Location: home.php');
 	exit();
 }

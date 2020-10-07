@@ -25,7 +25,11 @@ try {
     $stmt->bindParam(':numero', addslashes($_REQUEST['numero']));
     $stmt->bindParam(':cidade_diretor', addslashes($_REQUEST['cidade_diretor']));
     $stmt->bindParam(':estado_diretor', addslashes($_REQUEST['estado_diretor']));
+<<<<<<< HEAD
     $stmt->bindParam(':senha', addslashes($_REQUEST['senha']));
+=======
+    $stmt->bindParam(':senha', $hash);
+>>>>>>> origin/master
     $stmt->bindParam(':usuario', addslashes($_REQUEST['usuario']));
     // Execute the prepared statement
     $stmt->execute();

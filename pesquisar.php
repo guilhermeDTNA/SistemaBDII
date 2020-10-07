@@ -4,10 +4,17 @@ include_once './valida_login.php';
 include_once './mysql.php';
 include_once './topo.php';
 
+<<<<<<< HEAD
 //if (isset(addslashes($_POST['procurar']))) {
 
 $nome = addslashes($_POST['nome']);
 $cargo = addslashes($_POST['cargo']);
+=======
+if if (isset(addslashes($_POST['procurar']))) {
+
+    $nome = addslashes($_POST['nome']);
+    $cargo = addslashes($_GET['msg']);
+>>>>>>> origin/master
 
 try {
     if ($cargo == 'professor') {
