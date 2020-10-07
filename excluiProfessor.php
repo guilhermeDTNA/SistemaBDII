@@ -11,7 +11,7 @@ include_once './topo.php';
 // Attempt insert query execution
 try {
     // Create prepared statement
-    $id = $_POST['id_professor'];
+    $id = addslashes($_POST['id_professor']);
 
     $sql = "DELETE FROM professor WHERE id_professor = $id";
 

@@ -14,9 +14,9 @@ try {
     $stmt = $pdo->prepare($sql);
 
     // Bind parameters to statement
-    $stmt->bindParam(':id_diretor', $_REQUEST['id_diretor']);
-    $stmt->bindParam(':nome_despesa', $_REQUEST['nome_despesa']);
-    $stmt->bindParam(':valor_despesa', $_REQUEST['valor_despesa']);
+    $stmt->bindParam(':id_diretor', addslashes($_REQUEST['id_diretor']));
+    $stmt->bindParam(':nome_despesa', addslashes($_REQUEST['nome_despesa']));
+    $stmt->bindParam(':valor_despesa', addslashes($_REQUEST['valor_despesa']));
     // Execute the prepared statement
     $stmt->execute();
 

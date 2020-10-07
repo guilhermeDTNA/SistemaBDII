@@ -14,10 +14,10 @@ try {
     $stmt = $pdo->prepare($sql);
 
     // Bind parameters to statement
-    $stmt->bindParam(':id_professor', $_REQUEST['id_professor']);
-    $stmt->bindParam(':nome_curso', $_REQUEST['nome_curso']);
-    $stmt->bindParam(':mensalidade', $_REQUEST['mensalidade']);
-    $stmt->bindParam(':qtd_alunos', $_REQUEST['qtd_alunos']);
+    $stmt->bindParam(':id_professor', addslashes($_REQUEST['id_professor']));
+    $stmt->bindParam(':nome_curso', addslashes($_REQUEST['nome_curso']));
+    $stmt->bindParam(':mensalidade', addslashes($_REQUEST['mensalidade']));
+    $stmt->bindParam(':qtd_alunos', addslashes($_REQUEST['qtd_alunos']));
     // Execute the prepared statement
     $stmt->execute();
 
