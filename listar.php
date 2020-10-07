@@ -3,6 +3,12 @@
         <meta charset="utf-8">
         <title>Listar - GereCurso</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        
+        <!-- Arquivos Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery.min.js" ></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -11,7 +17,7 @@
         include_once './valida_login.php';
         ?>
         <?php
-        $msg = $_GET['msg'];
+        $msg = addslashes($_GET['msg']);
         //include_once './topo.php';
         include_once './mysql.php';
         try {
@@ -19,7 +25,7 @@
             if ($msg == 'Professor-Aluno') {
                 $stmt = $pdo->prepare("SELECT CONCAT(p.nome_professor, ' ', p.sobrenome_professor) as 'Professor', CONCAT(a.nome_aluno, ' ', a.sobrenome_aluno) as 'Aluno' from professor p join curso c join aluno a join matricula m on p.id_professor=c.id_professor and a.id_aluno=m.id_aluno and c.id_curso=m.id_curso order by p.nome_professor;");
             } elseif ($msg == 'Curso-Aluno') {
-                $id = $_POST['id_curso'];
+                $id = addslashes($_POST['id_curso']);
                 $stmt = $pdo->prepare("call sp_curso_aluno($id);");
             } elseif ($msg == 'Lucro') {
                 $stmt = $pdo->prepare("SELECT f_calculaFinancas() as 'Lucro'");

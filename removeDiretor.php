@@ -17,7 +17,7 @@
         <div class="titulo_opcoes">
             <font color="black">Remove diretores
         </div>
-        <form action="excluiDiretor.php" method="POST">
+        <form action="excluiDiretor.php?nivel=user" method="POST">
             
             <p align="center"> Identificação (ID) do diretor: <input type="text" name="id_diretor">
             

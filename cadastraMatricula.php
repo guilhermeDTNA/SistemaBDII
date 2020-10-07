@@ -14,8 +14,8 @@ try {
     $stmt = $pdo->prepare($sql);
 
     // Bind parameters to statement
-    $stmt->bindParam(':id_aluno', $_REQUEST['id_aluno']);
-    $stmt->bindParam(':id_curso', $_REQUEST['id_curso']);
+    $stmt->bindParam(':id_aluno', addslashes($_REQUEST['id_aluno']));
+    $stmt->bindParam(':id_curso', addslashes($_REQUEST['id_curso']));
     // Execute the prepared statement
     $stmt->execute();
 
