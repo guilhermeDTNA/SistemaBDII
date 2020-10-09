@@ -20,7 +20,6 @@
         $msg = addslashes($_GET['msg']);
         //include_once './topo.php';
         include_once './mysql.php';
-
         try {
 
             if ($msg == 'Professor-Aluno') {
