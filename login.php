@@ -1,20 +1,22 @@
 <?php
 session_start();
 
-define('HOST', 'localhost');
+define('HOST', 'containers-us-west-132.railway.app');
 define('USUARIO', 'root');
-define('SENHA', 'teste123');
-define('BD', 'SistemaBD');
+define('SENHA', 'ljKloMO8rrda3gaYBSfO');
+define('BD', 'railway');
 
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possivel conectar');
+$conexao = mysqli_connect(HOST, USUARIO, SENHA, BD, 7291) or die ('Não foi possivel conectar');
  
 if(empty(addslashes($_POST['usuario'])) || empty(addslashes($_POST['senha']))) {
 	header('Location: home.php');
 	exit();
 }
+
+$senha_provisoria = addslashes($_POST['senha']);
  
 $usuario = mysqli_real_escape_string($conexao, addslashes($_POST['usuario']));
-$senha = mysqli_real_escape_string($conexao, addslashes($_POST['senha']));
+$senha = mysqli_real_escape_string($conexao, md5('ABCDE'.$senha_provisoria));
  
 $query = "select usuario from diretor where usuario = '{$usuario}' and senha ='{$senha}'";
  
@@ -41,7 +43,7 @@ $row = mysqli_num_rows($result);
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
 
-	echo"<script language='javascript' type='text/javascript'>alert('Bem Vindo $usuario');window.location.href='./index.php';</script>";
+	echo"<script language='javascript' type='text/javascript'>window.location.href='./index.php';</script>";
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
